@@ -12,7 +12,7 @@ const Cities = (props) => {
             <ul>
                 {click ? props.city.towns.map((town ,i) => {
                     return (
-                        <Towns town={town} id={i+1} />
+                        <Towns town={town} key={i+1} id={i+1} />
                     )
                 }) : ""}
             </ul>

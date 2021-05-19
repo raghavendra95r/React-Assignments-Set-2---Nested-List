@@ -11,7 +11,7 @@ const States = (props) => {
             <ul>
                 {click ? props.state.cities.map((city ,i) => {
                     return (
-                        <Cities city={city} id={i+1} />
+                        <Cities city={city} key={i+1} id={i+1} />
                     )
                 }) : ""}
             </ul>
