@@ -5,7 +5,7 @@ import Towns from './Towns';
 const Cities = (props) => {
     const [click ,setClick] = useState(false);
     return (
-        <div>
+        <>
                <li onClick={()=> setClick(!click)}  id={`city${props.id}`}>
                 <button>{props.city.name} </button>
             </li>
@@ -17,7 +17,7 @@ const Cities = (props) => {
                 }) : ""}
             </ul>
             
-        </div>
+        </>
     )
 }
 
