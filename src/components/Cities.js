@@ -3,7 +3,7 @@ import Towns from './Towns';
 
 
 const Cities = (props) => {
-    let [click ,setClick] = useState(false)
+    const [click ,setClick] = useState(false);
     return (
         <div>
                <li onClick={()=> setClick(!click)}  id={`cities${props.id}`}>

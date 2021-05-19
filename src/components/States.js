@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Cities from "./Cities";
 
 const States = (props) => {
-    let [click ,setClick] = useState(false)
+    const [click ,setClick] = useState(false);
     return (
         <div>
             <li onClick={()=> setClick(!click)} id={`state${props.id}`}>
