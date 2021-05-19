@@ -157,13 +157,16 @@ const states = [
 
 function App() {
 
-  return <div id="main">
+  return <React.Fragment>
+  <div id="main">
 {
   states.map((state,i)=> {
     return( <States state={state} key={i+1} id={i+1} />)
   } )
 }
-  </div>;
+  </div>
+  </React.Fragment>
+
 }
 
 export default App;
