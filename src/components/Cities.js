@@ -6,7 +6,7 @@ const Cities = (props) => {
     const [click ,setClick] = useState(false);
     return (
         <div>
-               <li onClick={()=> setClick(!click)}  id={`cities${props.id}`}>
+               <li onClick={()=> setClick(!click)}  id={`city${props.id}`}>
                 <button>{props.city.name} </button>
             </li>
             <ul>
