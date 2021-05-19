@@ -6,7 +6,7 @@ const Towns = (props) => {
     return (
         <div>
              <li >
-                <button>{props.towns.name} </button>
+                <button>{props.town.name} </button>
             </li>
         </div>
     )
