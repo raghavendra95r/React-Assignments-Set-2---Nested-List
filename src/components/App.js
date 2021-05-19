@@ -160,7 +160,7 @@ function App() {
   return <div id="main">
 {
   states.map((state,i)=> {
-    return <States state={state} id={i+1} />
+    return( <States state={state} id={i+1} />)
   } )
 }
   </div>;

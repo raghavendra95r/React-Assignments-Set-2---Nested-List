@@ -13,7 +13,7 @@ const States = (props) => {
                     return (
                         <Cities city={city} id={i+1} />
                     )
-                }) : " "}
+                }) : ""}
             </ul>
         </div>
     )

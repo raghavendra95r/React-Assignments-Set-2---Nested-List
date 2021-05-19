@@ -14,7 +14,7 @@ const Cities = (props) => {
                     return (
                         <Towns town={town} id={i+1} />
                     )
-                }) : " "}
+                }) : ""}
             </ul>
             
         </div>
