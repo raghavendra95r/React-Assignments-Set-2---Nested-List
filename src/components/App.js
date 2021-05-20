@@ -155,20 +155,33 @@ const states = [
   },
 ];
 
-function App() {
+// function App() {
 
-  return <div id="main">
-    <ul>
-    {
-  states.map((state,i)=> {
-    return( <States state={state} key={i+1} id={i+1} />)
-  } )
-}
-    </ul>
+//   return <div id="main">
+//     <ul>
+//     {
+//   states.map((state,i)=> {
+//     return( <States state={state} key={i+1} id={i+1} />)
+//   } )
+// }
+//     </ul>
 
-  </div>
+//   </div>
  
 
+// }
+
+// export default App;
+function App() {
+  return (
+    <div id="main">
+      <ul>
+      {states.map((state,index)=>{
+        return <States key={index+1} states={state} id={index+1} />
+      })}
+      </ul>
+  </div>
+  )
 }
 
 export default App;
